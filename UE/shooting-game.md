@@ -34,26 +34,27 @@
 //collision part would be updated tomorrow!!
 //25.08.05
 
-<img width="400" height="685" alt="image" src="https://github.com/user-attachments/assets/530bd0c9-65d5-4557-88d3-dcd319423310" />
 
 //collision setup of BP_Player
 
 //No additional blueprint scripting
+<img width="400" height="685" alt="image" src="https://github.com/user-attachments/assets/530bd0c9-65d5-4557-88d3-dcd319423310" />
 
-
-<img width="404" height="658" alt="image" src="https://github.com/user-attachments/assets/9ceab432-e8fc-4bd5-9a82-aff32c17eb57" />
 
 //collision setup of BP_Enemy
+<img width="404" height="658" alt="image" src="https://github.com/user-attachments/assets/9ceab432-e8fc-4bd5-9a82-aff32c17eb57" />
 
-<img width="1129" height="330" alt="image" src="https://github.com/user-attachments/assets/f53e4290-cb58-480b-bdd9-af736e649a95" />
 
 //additional blueprint scripting for destroying player, bullet, enemy itself, after specific collision happens
+<img width="1129" height="330" alt="image" src="https://github.com/user-attachments/assets/f53e4290-cb58-480b-bdd9-af736e649a95" />
 
-<img width="1845" height="894" alt="image" src="https://github.com/user-attachments/assets/9edacf7c-77e9-4c47-b8e4-5bc6ca09fb99" />
 
 //spawn BP_KillZone to delete object which got out of the frame (Bullet, Enemy)
+<img width="1845" height="894" alt="image" src="https://github.com/user-attachments/assets/9edacf7c-77e9-4c47-b8e4-5bc6ca09fb99" />
 
-<img width="513" height="171" alt="image" src="https://github.com/user-attachments/assets/b437ec37-5813-42f3-bed7-8de371d64ef0" />
 
 //overlap with enemy or bullet would delete them
+<img width="513" height="171" alt="image" src="https://github.com/user-attachments/assets/b437ec37-5813-42f3-bed7-8de371d64ef0" />
+
+
 //25.08.07
