@@ -12,66 +12,66 @@ Day 1) Memory & Pointers<br>
    Used for local variables and function calls.<br>
    Memory is automatically released when function returns.<br>
    }<br>
-   #Heap
-   {
-   Memory location: Heap area
-   Management: Manually by developer (new/delete)
-   Size: Relatively large(dynamic allocation possible)
-   Speed: Slower
-   Lifetime: Persists until explicitly deleted
+   #Heap<br>
+   {<br>
+   Memory location: Heap area<br>
+   Management: Manually by developer (new/delete)<br>
+   Size: Relatively large(dynamic allocation possible)<br>
+   Speed: Slower<br>
+   Lifetime: Persists until explicitly deleted<br>
+   <br>
+   Used for dynamic memory allocation. If not released, it can cause Memory Leaks.<br>
+   }<br>
+   <br>
+<br>
+3. Pointer vs Reference<br>
+   #Pointer<br>
+   {<br>
+   Declaration: int* ptr<br>
+   Can be null: Y<br>
+   Can be reassigned: Y<br>
+   Memory access: (*ptr)<br>
+   <br>
+   Stores a memory address. Can be null and can point to different objects.<br>
+   }<br>
+   #Reference<br>
+   {<br>
+   Declaration: int& ref<br>
+   Can be null: N<br>
+   Can be resigned: N<br>
+   Memory access: Use like the original variable<br><br>
    
-   Used for dynamic memory allocation. If not released, it can cause Memory Leaks.
-   }
-   
-
-3. Pointer vs Reference
-   #Pointer
-   {
-   Declaration: int* ptr
-   Can be null: Y
-   Can be reassigned: Y
-   Memory access: (*ptr)
-   
-   Stores a memory address. Can be null and can point to different objects.
-   }
-   #Reference
-   {
-   Declaration: int& ref
-   Can be null: N
-   Can be resigned: N
-   Memory access: Use like the original variable
-   
-   An alias for another variable. Must be initialized and cannot be reassigned.
-   }
-  int value = 10;
-  // Pointer
-  int* ptr = &value;
-  *ptr = 20; // value = 20
-  // Reference
-  int& ref = value;
-  ref = 30;  // value = 30
-
-3. Dangling Pointer & Memory Leak
-   Dangling Pointer
-   {
-   A Pointer that points to memory that has already been freed.
-   
-   int* ptr = new int(10);
-   delete ptr;    // memory released
-   // ptr still exists but the memory is freed
-   // std::cout << *ptr << std::endl;  // unsafe!
-   ptr = nullptr; // safe
-   
-   points to memory that has beed freed
-   }
-
-   Memory Leak
-   {
-   Memory that is allocated but not properly released,
-   consuming resources until program termination.
-   
-   int* ptr = new int(10);
-   // delete ptr; // if not deleted, Memory Leak occurs
-   
-   allocated memory is never released, wasting system resources
-   }
+   An alias for another variable. Must be initialized and cannot be reassigned.<br>
+   }<br>
+  int value = 10;<br>
+  // Pointer<br>
+  int* ptr = &value;<br>
+  *ptr = 20; // value = 20<br>
+  // Reference<br>
+  int& ref = value;<br>
+  ref = 30;  // value = 30<br>
+<br>
+3. Dangling Pointer & Memory Leak<br>
+   Dangling Pointer<br>
+   {<br>
+   A Pointer that points to memory that has already been freed.<br>
+   <br>
+   int* ptr = new int(10);<br>
+   delete ptr;    // memory released<br>
+   // ptr still exists but the memory is freed<br>
+   // std::cout << *ptr << std::endl;  // unsafe!<br>
+   ptr = nullptr; // safe<br>
+   <br>
+   points to memory that has beed freed<br>
+   }<br>
+<br>
+   Memory Leak<br>
+   {<br>
+   Memory that is allocated but not properly released,<br>
+   consuming resources until program termination.<br>
+   <br>
+   int* ptr = new int(10);<br>
+   // delete ptr; // if not deleted, Memory Leak occurs<br>
+   <br>
+   allocated memory is never released, wasting system resources<br>
+   }<br>
