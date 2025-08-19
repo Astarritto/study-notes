@@ -24,7 +24,7 @@ Day 1) Memory & Pointers<br>
    }<br>
    <br>
 <br>
-3. Pointer vs Reference<br>
+2. Pointer vs Reference<br>
    #Pointer<br>
    {<br>
    Declaration: int* ptr<br>
@@ -50,7 +50,7 @@ Day 1) Memory & Pointers<br>
   // Reference<br>
   int& ref = value;<br>
   ref = 30;  // value = 30<br>
-<br>
+<br><br>
 3. Dangling Pointer & Memory Leak<br>
    Dangling Pointer<br>
    {<br>
