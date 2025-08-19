@@ -1,17 +1,17 @@
-Day 1) Memory & Pointers
-
-1. Stack vs Heap
-   ＃Stack
-   {
-   Memory location: Stack area
-   Management: Automatically by compiler
-   Size: Relatively small
-   Speed: Fast
-   Lifetime: Created whed function is called, destroyed automatically
-   
-   Used for local variables and function calls.
-   Memory is automatically released when function returns.
-   }
+Day 1) Memory & Pointers<br>
+<br>
+1. Stack vs Heap<br>
+   ＃Stack<br>
+   {<br>
+   Memory location: Stack area<br>
+   Management: Automatically by compiler<br>
+   Size: Relatively small<br>
+   Speed: Fast<br>
+   Lifetime: Created whed function is called, destroyed automatically<br>
+   <br>
+   Used for local variables and function calls.<br>
+   Memory is automatically released when function returns.<br>
+   }<br>
    #Heap
    {
    Memory location: Heap area
