@@ -10,7 +10,6 @@ class FileGuard<br>
   public:<br>
   FileGuard(const char* filename){file = fopen(filename,"r") ;}<br>
   ~FileGuard() { if(file) fclose (file); }<br><br>
-
   private:<br>
   FILE* file;<br>
   }<br>
