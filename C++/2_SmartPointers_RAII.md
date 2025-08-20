@@ -39,7 +39,9 @@ Types in modern C++:<br>
   Non-owning reference to a shared_ptr.<br>
   Does not increase reference count.<br>
   Useful to avoid cyclic references.<br>
-  std::weak_ptr<int> wptr = ptr1;<br><br>
+  {<br>
+  std::weak_ptr<int> wptr = ptr1;<br>
+  }<br><br>
 3. Benefits of Smart Pointers<br>
  -Automatic memory management -> prevents leaks.<br>
  -Exception-safe code -> no need to manually delete.<br>
