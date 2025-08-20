@@ -13,7 +13,7 @@ class FileGuard<br>
   private:<br>
   FILE* file;<br>
   }<br>
----------------FileGuard automatically closes the file when it goes out of scope<br>
+  //FileGuard automatically closes the file when it goes out of scope<br>
 }<br><br><br>
 2. Smart Pointers<br>
 {<br>
