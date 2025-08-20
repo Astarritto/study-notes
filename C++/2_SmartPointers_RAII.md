@@ -1,4 +1,4 @@
-Day 2 Smart Pointers & RAII<br><br>
+Day 2) Smart Pointers & RAII<br><br>
 1. RAII (Resource Acquisition Is Initialization)<br>
 {<br>
 Definition: A C++ idiom that binds resource management (memory, file handles, sockets, etc.) to object lifetime.<br>
