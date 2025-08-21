@@ -39,7 +39,7 @@ Types in modern C++:<br>
   Useful to avoid cyclic references.<br>
   {<br>
   std::weak_ptr<int> wptr = ptr1;<br>
-  <br><br>
+  }<br><br>
 # Benefits of Smart Pointers<br>
  -Automatic memory management -> prevents leaks.<br>
  -Exception-safe code -> no need to manually delete.<br>
