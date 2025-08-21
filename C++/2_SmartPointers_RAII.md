@@ -1,5 +1,5 @@
 Day 2) Smart Pointers & RAII<br><br>
-1. RAII (Resource Acquisition Is Initialization)<br>
+# RAII (Resource Acquisition Is Initialization)<br>
 {<br>
 Definition: A C++ idiom that binds resource management (memory, file handles, sockets, etc.) to object lifetime.<br>
 Principle: Acquire resources in the constructor, release them in the destructor.<br>
@@ -15,7 +15,7 @@ class FileGuard<br>
   }<br>
   //FileGuard automatically closes the file when it goes out of scope<br>
 }<br><br><br>
-2. Smart Pointers<br>
+# Smart Pointers<br>
 {<br>
 Definition: Objects that manage dynamic memory automatically, following RAII.<br>
 Types in modern C++:<br>
@@ -41,11 +41,11 @@ Types in modern C++:<br>
   {<br>
   std::weak_ptr<int> wptr = ptr1;<br>
   }<br><br>
-3. Benefits of Smart Pointers<br>
+# Benefits of Smart Pointers<br>
  -Automatic memory management -> prevents leaks.<br>
  -Exception-safe code -> no need to manually delete.<br>
  -Clear ownership semantics(unique_ptr vs shared_ptr).<br><br>
-4. Best Practices<br>
+# Best Practices<br>
  -Prefer std::unique_ptr unless shared ownership is necessary.<br>
  -Avoid raw new / delete in modern C++.<br>
  -Use std::weak_ptr to break cycles in shared_ptr graphs.<br>
