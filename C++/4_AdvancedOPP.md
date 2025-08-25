@@ -1,7 +1,7 @@
 day 4) Advanced OOP<br><br>
 
-#Multiple Inheritance vs Interface<br>
-#Multiple Inheritance<br>
+# Multiple Inheritance vs Interface<br>
+## Multiple Inheritance<br>
 In C++, a class can inherit from more than one base class.<br>
 This is called Multiple Inheritance.<br>
 However, it  can leat to issues like the *Diamond Problem* if two classes share a common ancestor.
@@ -32,7 +32,7 @@ int main()<br>
     obj.B::hello(); // Explicitly call B’s hello<br>
 } //This shows the ambiguity when two parent classes define the same function.<br><br>
 
-#Interface<br>
+## Interface<br>
 C++ does not have a dedicated interface keyword like Java or C#.<br>
 Instead, we create interfaces using pure virtual classes(classes with only pure virtual functions).
 <br><br>
@@ -68,7 +68,7 @@ int main() <br>
 }//Here, Ishape acts like an interface. Every derived class must implement draw().<br><br><br>
 
 
-#Pure Virtual Functions<br>
+# Pure Virtual Functions<br>
 -Declared with =0 at the end.<br>
 -Make the class abstract (cannot be instantiated).<br>
 -Force derived classes to implement the function.<br><br>
@@ -93,8 +93,8 @@ int main() <br>
 }<br><br><br>
 
 
-#override and final Keywords<br>
-1. override<br>
+# override and final Keywords<br>
+## override<br>
    -Ensures that a derived class is actually overriding a virtual function.<br>
    -If the function signature doesn't match, the compiler throws an error.
 <br><br>
@@ -111,7 +111,7 @@ public:<br>
     // void print(double x) override; // ERROR: signature mismatch<br>
 };<br><br>
 
-2. final<br>
+## final<br>
    -Prevents further overriding of a virtual function.<br>
    -Can also applied to a class to stop inheritance.<br><br>
 
