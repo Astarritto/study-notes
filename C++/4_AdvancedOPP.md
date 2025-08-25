@@ -60,11 +60,11 @@ int main() <br>
     IShape* shape1 = new Circle();<br>
     IShape* shape2 = new Square();<br><br>
 
-    shape1->draw();<br>
-    shape2->draw();<br><br>
+    shape1->draw();
+    shape2->draw();
 
-    delete shape1;<br>
-    delete shape2;<br>
+    delete shape1;
+    delete shape2;
 }//Here, Ishape acts like an interface. Every derived class must implement draw().<br><br><br>
 
 
