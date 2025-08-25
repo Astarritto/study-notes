@@ -135,7 +135,7 @@ class FinalClass final <br>
 
 
 #Summary<br>
--Multiple inheritance can be powerful but may cause ambiguity.<br>
+-Multiple inheritance can be powerful but may cause ambiguity. Not recommended.<br>
 -Interfaces in C++ are just abstract classes with pure virtual functions.<br>
 -Pure virtual functions force derived classes to implement behavior.<br>
 -Use override for safer polymorphosism.<br>
