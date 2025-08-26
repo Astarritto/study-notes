@@ -19,6 +19,7 @@ int main() <br>
 <br>
 ## Class Template<br>
 Classs templates define generic data structures:<br>
+<pre>```cpp
 template <typename T><br>
 class Box <br>
 {<br>
@@ -36,7 +37,7 @@ int main() <br>
 <br>
     cout << intBox.getValue() << "\n";   // 42<br>
     cout << strBox.getValue() << "\n";   // Hello<br>
-}<br>
+}``` </pre><br>
 <br>
 <br>
 # Standard Template Libray (STL)<br>
@@ -44,6 +45,7 @@ The STL provides ready-made data structures and algorithms.<br>
 Some common containers: <br>
 ## vector<br>
 A dynamic array that automatically resizes.<br>
+<pre>```cpp
 #include <vector><br>
 #include <iostream><br>
 using namespace std;<br>
@@ -54,12 +56,12 @@ int main() <br>
     v[1] = 20;       // access by index<br>
 <br>
     for (int x : v) cout << x << " "; // 1 20 3 4<br>
-}<br>
+}``` </pre><br>
 <br>
 ## map<br>
 A sorted key-value container(implemented as a balanced binary tree).<br>
 Keys are unique and automatically ordered.<br><br>
-
+<pre>```cpp
 #include <map><br>
 #include <iostream><br>
 using namespace std;<br>
@@ -75,11 +77,12 @@ int main() <br>
         cout << name << " : " << age << "\n";
     }
     // Output is ordered by key
-}<br><br>
+}``` </pre><br><br>
 
 ## unordered_map<br>
 A hash-table based key-value container.<br>
 Faster average lookup, but keys are not ordered.<br>
+<pre>```cpp
 #include <unordered_map><br>
 #include <iostream><br>
 using namespace std;<br><br>
@@ -94,13 +97,14 @@ int main() <br>
     {
         cout << subject << " : " << score << "\n";
     }
-}<br><br><br>
+}``` </pre><br><br><br>
 
 
 # Iterators<br>
 Iterators act like pointers for STL containers.<br>
 They allow traversal without knowing the underlying structure.<br>
 Example: Using Iterators with vector<br>
+<pre>```cpp           
 #include <vector><br>
 #include <iostream><br>
 using namespace std;<br>
@@ -118,7 +122,7 @@ int main() <br>
 
     // Modern range-based loop
     for (int x : v) cout << x << " "; // 10 20 30
-}<br>
+}``` </pre><br>
 //Iterators also support algorithms like (find), (sort), (for_each) from <algorithm>.<br><br>
 
 
