@@ -4,7 +4,7 @@ Templates allow wrtiting generic code that works with different data types witho
 ## Function Template<br>
 A function template works with any type:<br>
 <br> 
-<pre>cpp
+<pre>
 template <typename T><br>
 T add(T a, T b) <br>
 {<br>
