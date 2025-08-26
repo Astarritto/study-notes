@@ -4,7 +4,7 @@ Templates allow wrtiting generic code that works with different data types witho
 ## Function Template<br>
 A function template works with any type:<br>
 <br> 
-<pre>```cpp
+<pre>
 template <typename T><br>
 T add(T a, T b) <br>
 {<br>
@@ -15,7 +15,7 @@ int main() <br>
 {<br>
     cout << add<int>(3, 5) << "\n";     // 8<br>
     cout << add<double>(2.5, 4.1) << "\n"; // 6.6<br>
-}```</pre><br>
+}</pre><br>
 <br>
 ## Class Template<br>
 Classs templates define generic data structures:<br>
