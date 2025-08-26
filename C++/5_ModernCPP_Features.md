@@ -5,40 +5,41 @@ Templates allow wrtiting generic code that works with different data types witho
 A function template works with any type:<br>
 <br> 
 ```cpp
-template <typename T><br>
-T add(T a, T b) <br>
-{<br>
-    return a + b;<br>
-}<br>
-<br>
-int main() <br>
-{<br>
-    cout << add<int>(3, 5) << "\n";     // 8<br>
-    cout << add<double>(2.5, 4.1) << "\n"; // 6.6<br>
+template <typename T>
+T add(T a, T b)
+{
+    return a + b;
+}
+
+int main()
+{
+    cout << add<int>(3, 5) << "\n";     // 8
+    cout << add<double>(2.5, 4.1) << "\n"; // 6.6
 }
 ```
 <br>
 <br>
 ## Class Template<br>
-Classs templates define generic data structures:<br>
+Classs templates define generic data structures:
+<br>
 ```cpp
-template <typename T><br>
-class Box <br>
-{<br>
-private:<br>
-    T value;<br>
-public:<br>
-    Box(T v) : value(v) {}<br>
-    T getValue() { return value; }<br>
-};<br>
-<br>
-int main() <br>
-{<br>
-    Box<int> intBox(42);<br>
-    Box<string> strBox("Hello");<br>
-<br>
-    cout << intBox.getValue() << "\n";   // 42<br>
-    cout << strBox.getValue() << "\n";   // Hello<br>
+template <typename T>
+class Box
+{
+private:
+    T value;
+public:
+    Box(T v) : value(v) {}
+    T getValue() { return value; }
+};
+
+int main()
+{
+    Box<int> intBox(42);
+    Box<string> strBox("Hello");
+
+    cout << intBox.getValue() << "\n";   // 42
+    cout << strBox.getValue() << "\n";   // Hello
 }
 ```
 <br>
