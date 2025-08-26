@@ -17,7 +17,8 @@ int main()
     cout << add<double>(2.5, 4.1) << "\n"; // 6.6
 }
 ```
-<br><br>
+
+  
 ## Class Template<br>
 Classs templates define generic data structures:
 <br>
