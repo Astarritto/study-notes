@@ -20,6 +20,7 @@ int main()
 <br>
 <br>
 ## Class Template
+<br>
 Classs templates define generic data structures:
 <br>
 
