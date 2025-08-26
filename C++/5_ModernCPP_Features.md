@@ -22,6 +22,7 @@ int main()
 ## Class Template<br>
 Classs templates define generic data structures:
 <br>
+
 ```cpp
 template <typename T>
 class Box
@@ -50,44 +51,49 @@ The STL provides ready-made data structures and algorithms.<br>
 Some common containers: <br>
 ## vector<br>
 A dynamic array that automatically resizes.<br>
-<pre>
-#include <vector><br>
-#include <iostream><br>
-using namespace std;<br>
-int main() <br>
-{<br>
-    vector<int> v = {1, 2, 3};<br>
-    v.push_back(4);  // add element<br>
-    v[1] = 20;       // access by index<br>
-<br>
-    for (int x : v) cout << x << " "; // 1 20 3 4<br>
-} </pre><br>
+
+```cpp
+#include <vector>
+#include <iostream>
+using namespace std;
+int main()
+{
+    vector<int> v = {1, 2, 3};
+    v.push_back(4);  // add element
+    v[1] = 20;       // access by index
+
+    for (int x : v) cout << x << " "; // 1 20 3 4
+}
+```
 <br>
 ## map<br>
 A sorted key-value container(implemented as a balanced binary tree).<br>
 Keys are unique and automatically ordered.<br><br>
-<pre>
-#include <map><br>
-#include <iostream><br>
-using namespace std;<br>
-<br>
-int main() <br>
-{<br>
-    map<string, int> ages;<br>
-    ages["Alice"] = 25;<br>
-    ages["Bob"] = 30;<br><br>
+
+```cpp
+#include <map>
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    map<string, int> ages;
+    ages["Alice"] = 25;
+    ages["Bob"] = 30;
 
     for (auto& [name, age] : ages)
     {
         cout << name << " : " << age << "\n";
     }
     // Output is ordered by key
-}</pre><br><br>
+}
+```
+<br><br>
 
 ## unordered_map<br>
 A hash-table based key-value container.<br>
 Faster average lookup, but keys are not ordered.<br>
-<pre>
+```cpp
 #include <unordered_map><br>
 #include <iostream><br>
 using namespace std;<br><br>
@@ -102,21 +108,23 @@ int main() <br>
     {
         cout << subject << " : " << score << "\n";
     }
-}</pre><br><br><br>
+}
+```
+<br><br><br>
 
 
 # Iterators<br>
 Iterators act like pointers for STL containers.<br>
 They allow traversal without knowing the underlying structure.<br>
 Example: Using Iterators with vector<br>
-<pre>         
-#include <vector><br>
-#include <iostream><br>
-using namespace std;<br>
-<br>
-int main() <br>
-{<br>
-    vector<int> v = {10, 20, 30};<br>
+```cpp
+#include <vector>
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    vector<int> v = {10, 20, 30};
 
     // Explicit iterator
     for (vector<int>::iterator it = v.begin(); it != v.end(); ++it) 
@@ -127,8 +135,10 @@ int main() <br>
 
     // Modern range-based loop
     for (int x : v) cout << x << " "; // 10 20 30
-}</pre><br>
-//Iterators also support algorithms like (find), (sort), (for_each) from <algorithm>.<br><br>
+}
+```
+<br>
+Iterators also support algorithms like (find), (sort), (for_each) from <algorithm>.<br><br>
 
 
 #Summary<br>
