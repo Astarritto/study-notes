@@ -17,10 +17,8 @@ int main()
     cout << add<double>(2.5, 4.1) << "\n"; // 6.6
 }
 ```
-<br>
-<br>
-## Class Template
-<br>
+<br><br>
+## Class Template<br>
 Classs templates define generic data structures:
 <br>
 
@@ -44,9 +42,7 @@ int main()
     cout << strBox.getValue() << "\n";   // Hello
 }
 ```
-<br>
-<br>
-<br>
+<br><br><br>
 # Standard Template Libray (STL)<br>
 The STL provides ready-made data structures and algorithms.<br>
 Some common containers: <br>
@@ -66,7 +62,7 @@ int main()
     for (int x : v) cout << x << " "; // 1 20 3 4
 }
 ```
-<br>
+
 ## map<br>
 A sorted key-value container(implemented as a balanced binary tree).<br>
 Keys are unique and automatically ordered.<br><br>
