@@ -5,7 +5,7 @@ Can be used as function objects on the fly
 Commonly used for short callbacks, STL algorithms, and event handling
 
 ##Syntax
-
+```cpp
 //[capture](parameters)->return_type{body}
 auto sum = [](int a, int b) -> int {return a + b};
 int result = sum(3, 5); //result = 8
@@ -17,7 +17,7 @@ int result = sum(3, 5); //result = 8
 {return a + b} : function body
 
 ##Example with STL algorithm
-
+```cpp
 #include <algorithm>
 #include <vector>
 #include <iostream>
@@ -30,7 +30,7 @@ std::cout << count; // number of even numbers = 2
 ##std::function
 Can store function pointers, lambdas, member functions in a uniform type
 Allows functions to be stored and passed like variables
-
+```cpp
 #include <functional>
 #include <iostream>
 
@@ -41,7 +41,7 @@ std::cout << add(2,3); // 5
 ##std::bind
 Binds some arguments of a function to create a new callable object
 Useful for callbacks and event handling
-
+```cpp
 #include <functional>
 #include <iostream>
 
@@ -60,6 +60,7 @@ Allows storing and calling functions as objects
 In C++, typically implemented using lambda + std::function + bind
 
 ##Example
+```cpp
 #include <functional>
 #include <vector>
 #include <iostream>
