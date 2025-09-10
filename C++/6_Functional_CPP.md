@@ -9,13 +9,13 @@ Commonly used for short callbacks, STL algorithms, and event handling
 //[capture](parameters)->return_type{body}
 auto sum = [](int a, int b) -> int {return a + b};
 int result = sum(3, 5); //result = 8
-
+```
 ##Explanation
 [ ] : capture external variables
 (int a, int b): parameters
 ->int : return type(optional)
 {return a + b} : function body
-
+```
 ##Example with STL algorithm
 ```cpp
 #include <algorithm>
@@ -25,7 +25,7 @@ int result = sum(3, 5); //result = 8
 std::vector<int> numbers = {1, 2, 3, 4, 5};
 int count = std::count_if(numbers.begin(), numbers.end(), [](int n){ return n % 2 == 0; });
 std::cout << count; // number of even numbers = 2
-
+```
 #std::function & std::bind
 ##std::function
 Can store function pointers, lambdas, member functions in a uniform type
@@ -36,7 +36,7 @@ Allows functions to be stored and passed like variables
 
 std::function<int(int,int)> add = [](int a,int b){ return a+b; };
 std::cout << add(2,3); // 5
-
+```
 
 ##std::bind
 Binds some arguments of a function to create a new callable object
@@ -49,7 +49,7 @@ int Multiply(int a, int b){ return a*b; }
 
 auto times10 = std::bind(Multiply, std::placeholders::_1, 10);
 std::cout << times10(5); // 50 = 5*10
-
+```
 _1, _2, etc. indicate the positions of arguments to be passed later
 
 
@@ -77,7 +77,7 @@ int main(){
     RegisterCallback([](int n){ std::cout << "Callback: " << n << "\n"; });
     TriggerCallbacks(42); // "Callback: 42"
 }
-
+```
 ##Explanation
 callbacks vector stores multiple functions
 Functions are registered via RegisterCallback anc triggered via TriggerCallbacks
